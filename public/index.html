@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Data System - Home</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;600&display=swap');
+    body { margin:0; padding:0; font-family:'Poppins', sans-serif; height:100vh; display:flex; justify-content:center; align-items:center; background:radial-gradient(circle at top left, #0f2027, #203a43, #2c5364); color:#fff; overflow:hidden; }
+    body::before { content:""; position:absolute; width:200%; height:200%; background:conic-gradient(from 180deg at 50% 50%, #007bff, #00d4ff, #007bff); animation:rotate 12s linear infinite; opacity:0.07; }
+    @keyframes rotate { 100%{ transform:rotate(360deg); } }
+    .container { position:relative; z-index:1; width:90%; max-width:700px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); border-radius:20px; padding:40px; text-align:center; backdrop-filter:blur(15px); box-shadow:0 8px 32px rgba(0,0,0,0.4); animation:fadeIn 1s ease; }
+    .home h1 { font-family:'Montserrat',sans-serif; font-size:2.5rem; margin-bottom:20px; color:#00eaff; text-shadow:0 0 15px rgba(0,234,255,0.8); }
+    .home p { font-size:1.1rem; margin-bottom:25px; line-height:1.6; color:#ddd; }
+    .btn { margin-top:20px; padding:14px 35px; border:none; border-radius:40px; font-size:1rem; font-weight:600; cursor:pointer; color:#fff; background:linear-gradient(90deg, #00d4ff, #007bff, #00d4ff); background-size:200% auto; box-shadow:0 0 25px rgba(0,212,255,0.5); transition:0.4s; text-decoration:none; display:inline-block; }
+    .btn:hover { background-position:right center; transform:scale(1.08); box-shadow:0 0 35px rgba(0,212,255,0.9); }
+    @keyframes fadeIn { from{ transform:translateY(30px); opacity:0; } to{ transform:translateY(0); opacity:1; } }
+  </style>
+</head>
+<body>
+  <div class="container home">
+    <h1>🔐 Secure Data System</h1>
+    <p>A Secure System for <b>Data Compression</b>, <b>Encryption</b>, <b>Hashing</b> & <b>Steganography</b>.<br>Multi-layered protection to secure your sensitive data.</p>
+    <a href="compress.html" class="btn">🚀 Start Securing Data</a>
+  </div>
+</body>
+</html>
